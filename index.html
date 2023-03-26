@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Expance Tracker</title>
+</head>
+<body>
+    <header id="main-header" class="bg-info text-white p-4 mb-3">
+        <div class="container">
+          <h1 id="header-title">Expense Tracker </h1>
+        </div>
+      </header>
+      <div class="container">
+       <div id="main" class="card card-body bg-secondary">
+        <h2 class="title" id="second-title">Enter Details</h2>
+        <form class="form mb-3" id="form">
+            <label for="amount">Choose expense amount</label>
+          <input type="number" class="form-control mr-8 pd-12" id="amount"> 
+          <label for="description" class="mt-2">Choose description</label>
+          <input type="text" class="form-control mr-8 pd-12" id="description">
+          <label for="category" class="mt-2">Choose a category</label>
+          <select name="exptype" id="exptype" class="form-control mr-8 pd-12">
+            <option value="Movie">Movie</option>
+            <option value="Travel">Travel</option>
+            <option value="Fuel">Fuel</option>
+          </select>
+          <input type="submit" class="btn btn-dark mt-2" id='sub' value="Add Expense">
+        </form>
+        <h2 class="title">Expense Record</h2>
+        <ul id="expenses" class="list-group">
+         
+        </ul>
+       </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>
